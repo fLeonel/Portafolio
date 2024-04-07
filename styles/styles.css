@@ -4,63 +4,78 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Encode Sans Expanded", "sans-serif";
 }
 body{
-  background-color: black;
+  background-color:  #010524;
+  font-family: "Encode Sans Expanded", "sans-serif";
 }
 
 .header-container {
   background-image:url('../img/background.jpg');
+  background-attachment: fixed;
   background-size:cover;
   padding: 100px;
-  height: 860px;
+  height: 800px;
   width: 100%;
 }
 
 .menu-container{
-  text-align: center;
-  font-size: 25px;
-  padding: 60px;
-  color: white;
+  margin: 90px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items:center;
 }
 
 .profile{
   border-radius: 100%;
   width: 300px;
-  align-items: center;
 }
 
-form{
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.text-init{
+  font-size: 75px;
+  color: white;
+  text-align: left;
 }
 
-input{
-  background:transparent;
-  border: none;
-  border-bottom: 2px solid green;
-  border-radius: 20px;
-  color: whitesmoke;
-  padding: 20px;
-  width: 150px;
+.text-name{
+  font-size: 50px;
+  text-align: left;
+  color: white;
 }
 
 .whoiam-container{
-  font-size: 30px;
-  height: 200px;
-  text-align: center;
-  color: white;
+  background: transparent;
 }
+
+.tech-container{
+  font-size: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 550px;
+}
+
 .tech{
-  width: 400px;
-  margin: 20px;
+  width: 1500px;
+  margin: 40px;
+  display: flex;
 }
 
 .projects-container{
-  background: gray;
+  background: transparent;
   width: auto;
-  height: 200px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
 }
+.container-projects{
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  align-items: center;
+  padding: 40px;
+}
+

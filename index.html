@@ -4,41 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" sizes="20px" type="img/x-icon">
     <title>Dennis Ramirez</title>
   </head>
   <body>
     <!-- Header -->
     <section class="header-container">
       <div class="menu-container">
-          <img class="profile" src="./img/Perfil.jpeg" alt="profile">
-        <h1>👋 ¡Hola mundo! Aqui Dennis Ramirez 👨‍💻</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam error
-          voluptatibus quae nostrum. Excepturi reprehenderit eos, culpa eaque
-          eius necessitatibus?
-        </p>
+        <img class="profile" src="./img/Perfil.jpeg" alt="profile"/>
+        <div class="texts">
+          <h1 class="text-init">
+            { Hola mundo } 👋
+          <h1>
+          <h2 class="text-name">
+            Soy Dennis Ramirez 👨‍💻
+          </h2>
+        </div>
       </div>
     </section>
+      <!-- Projects-->
+      <section class="projects-container">
+          <div class="container-projects">
+            <h1>Proyectos</h1>
+            <div class="card">
+              <h3>title</h3>
+              <p>description</p>
+              <img src="" alt="project1" />
+            </div>
+          </div>
+      </section>
     <!--Técnologias que conozco-->
     <section class="whoiam-container">
-      <div class="container-whoaim">
-        <h1>Técnologias que conozcco</h1>
+      <div class="tech-container">
+        <h1>Técnologias</h1>
         <a href="https://skilicons.dev">
-          <img class="tech"
-            src="https://skillicons.dev/icons?i=git,github,html,css,javascript,ts,nodejs,react"
-            alt="icons"/>
+          <img
+            class="tech"
+            src="https://skillicons.dev/icons?i=git,github,html,css,javascript,ts,nodejs,react,nextjs"
+            alt="icons"
+          />
         </a>
-      </div>
-    </section>
-    <!-- Projects-->
-    <section class="projects-container">
-      <div class="container-projects">
-        <h1>He trabajado en los siguientes proyectos:</h1>
-        <div class="card">
-          <h3>title</h3>
-          <p>description</p>
-          <img src="" alt="project1" />
-        </div>
       </div>
     </section>
     <!-- Footer -->
@@ -46,13 +51,10 @@
       <div class="container">
         <h4 class="txt-end">
           Powered by<spam class="github">
-            <a href="https://github.com/fLeonel">@fLeonel</a></spam>
+            <a href="https://github.com/fLeonel">@fLeonel</a></spam
+          >
         </h4>
       </div>
     </section>
-    <form>
-      <input type="text" placeholder="Texto" />
-      <input type="password" placeholder="password" />
-    </form>
   </body>
 </html>
