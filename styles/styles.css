@@ -17,7 +17,6 @@ body{
   height: 800px;
   width: 100%;
 }
-
 .menu-container{
   margin: 90px;
   padding: 50px;
@@ -26,12 +25,10 @@ body{
   align-items:center;
   justify-content: space-between;
 }
-
 .profile{
   border-radius: 100%;
   width: 450px;
 }
-
 .text-init{
   font-size: 70px;
   font-weight: 200px;
@@ -44,7 +41,45 @@ body{
   text-align: left;
   color: white;
 }
-
+/* 1ra seccion about-me */
+.biog-container{
+  padding: 50px;
+  height: auto;
+  width: auto;
+}
+.about-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.photo-container{
+  margin: 20px;
+  padding: 150px;
+}
+.profile2{
+  border-radius: 100px;
+  width: 450px;
+}
+.aboutme{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title-aboutme{
+  color: white;
+  font-size: 70px;
+}
+.title-aboutme spam{
+  color: #010180;
+}
+.paragraph{
+  color: white;
+  font-size: 40px;
+  text-align: left;
+}
 .whoiam-container{
   background: transparent;
 }
@@ -99,27 +134,24 @@ body{
 spam:hover{
   color: red;
 }
-
 /* Creacion de animacion bash */
 .text-init span{
   position: relative;
 }
-
 .text-init span::before{
-  color: purple;
+  color: #b9f30a;
   content:"";
   animation: words 21s infinite;
 }
-
 .text-init span::after{
   content: "";
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  border-left: 5px solid purple;
+  border-left: 5px solid #b9f30a;
   background-color:#0003;
   right: -8px;
-  animation: cursor .9s infinite, typing 49s steps(9) infinite;
+  animation: cursor .5s infinite, typing 49s steps(9) infinite;
 }
 @keyframes cursor {
   to{
