@@ -27,7 +27,7 @@ body{
 }
 .profile{
   border-radius: 100%;
-  width: 450px;
+  width: 300px;
 }
 .text-init{
   font-size: 70px;
@@ -35,7 +35,6 @@ body{
   text-align: right;
   color: white;
 }
-
 .text-name{
   font-size: 50px;
   text-align: left;
@@ -43,42 +42,35 @@ body{
 }
 /* 1ra seccion about-me */
 .biog-container{
+  margin: 10px;
   padding: 50px;
-  height: auto;
   width: auto;
 }
 .about-container{
+  margin: 0px;
+  padding: 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+  flex-direction: column;
   align-items: center;
-  margin: auto;
-}
-.photo-container{
-  margin: 20px;
-  padding: 150px;
+  justify-content: space-between;
 }
 .profile2{
   border-radius: 100px;
-  width: 450px;
-}
-.aboutme{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  width: 350px;  
+  margin: 10px;
 }
 .title-aboutme{
-  color: white;
   font-size: 70px;
-}
-.title-aboutme spam{
-  color: #010180;
+  font-weight: 200px;
+  text-align: center;
+  color: #b9f30a;
+  margin-top: 50px;
 }
 .paragraph{
   color: white;
-  font-size: 40px;
-  text-align: left;
+  font-size: 30px;
+  text-align: justify;
+  margin-top: 40px;
 }
 .whoiam-container{
   background: transparent;
@@ -95,9 +87,8 @@ body{
 }
 
 .tech{
-  width: 1500px;
+  width: 1200px;
   margin: 40px;
-  display: flex;
 }
 
 .projects-container{
@@ -124,63 +115,35 @@ body{
   margin: 20px;
   padding: 20px;
   text-align: center;
-  height: 40px;
   align-items: center;
 }
 .txt-end{
   font-size: 20px;
   color: white;
 }
-spam:hover{
+spam{
+  color: #2e2eda;
+}
+.heart{
   color: red;
 }
 /* Creacion de animacion bash */
-.text-init span{
-  position: relative;
-}
-.text-init span::before{
+.animate{
+  display: block;
   color: #b9f30a;
-  content:"";
-  animation: words 21s infinite;
+  border-right: 5px solid;
+  width: 14ch;
+  white-space: nowrap;
+  animation: typing 1s steps(25), blink .4s step-end infinite alternate;
+  overflow: hidden;
 }
-.text-init span::after{
-  content: "";
-  position: absolute;
-  width: calc(100% + 8px);
-  height: 100%;
-  border-left: 5px solid #b9f30a;
-  background-color:#0003;
-  right: -8px;
-  animation: cursor .5s infinite, typing 49s steps(9) infinite;
+
+@keyframes typing {
+  from { width: 0;}
 }
-@keyframes cursor {
-  to{
-    border-left: 1px solid transparent;
-  }
-}
-@keyframes words{
-  0%, 25%{
-    content: "{Hola Mundo}👋";
-    opacity: 0;
-  }
-  26%, 50%{
-    content: "{Hola Mundo}👋";
-    opacity: 1;
-  }
-  51%, 75%{
-    content:"{Hello World}👋";
-    opacity: 0;
-  }
-  76%, 100%{
-    content: "{Hello World}👋";
-    opacity: 1;
-  }
-}
-@keyframes typing{
-  10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95%{
-    width:0;
-  } 
-  5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85%, 100%{
-    width:calc(100% + 8px);
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
