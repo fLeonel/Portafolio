@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 *{
   margin: 0px;
@@ -6,7 +7,7 @@
 }
 body{
   background-color:  #010524;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .header-container {
@@ -30,13 +31,13 @@ body{
   width: 300px;
 }
 .text-init{
-  font-size: 70px;
+  font-size: 3em;
   font-weight: 200px;
   text-align: right;
   color: white;
 }
 .text-name{
-  font-size: 50px;
+  font-size: 4em;
   text-align: left;
   color: white;
 }
@@ -60,7 +61,7 @@ body{
   margin: 10px;
 }
 .title-aboutme{
-  font-size: 70px;
+  font-size: 4em;
   font-weight: 200px;
   text-align: center;
   color: #b9f30a;
@@ -77,49 +78,84 @@ body{
 }
 
 .tech-container{
-  font-size: 40px;
+  font-size: 1em;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   height: 550px;
+  justify-content: flex-end;
 }
 
 .tech{
-  width: 1200px;
+  width: 840px;
   margin: 40px;
 }
 
+/* Proyectos realizados */
 .projects-container{
-  background: transparent;
   width: auto;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-}
-.container-projects{
-  color: white;
+  height: auto;
   text-align: center;
   font-size: 45px;
-  align-items: center;
-  padding: 40px;
+  color: #b9f30a;
+  margin: 0 100px 0 100px;
 }
+.container-projects{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between ;
+  color: white;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.card{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 0;
+}
+.card img{
+  width: 350px;
+  height: 200px;
+  margin: 10px;
+}
+.card img:hover{
+  border: 5px solid #b9f30a;
+  box-shadow: 0 10px 50px #46e;
+}
+.card h3{ 
+  font-size: 20px;
+  text-align:center;
+  margin:20px;
+}
+.card p{
+  font-size: 20px;
+}
+.card a:hover{
+  color:#b9f30a;
+}
+
+/* footer */
 
 .footer-container{
   width: auto;
-  height: 40px;
   background: #010534;
 }
 .fo-container{
-  margin: 20px;
   padding: 20px;
+  display: block;
+  flex-direction: center;
   text-align: center;
   align-items: center;
 }
+
 .txt-end{
-  font-size: 20px;
-  color: white;
+  font-size: 1em;
+  color: gray;
 }
 spam{
   color: #2e2eda;
@@ -147,3 +183,5 @@ spam{
     border-color: transparent;
   }
 }
+
+/* Responsive */
