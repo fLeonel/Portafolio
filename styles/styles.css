@@ -9,7 +9,6 @@ body{
   background-color:  #010524;
   font-family: "Quicksand", sans-serif;
 }
-
 .header-container {
   background-image:url('../img/background.jpg');
   background-attachment: fixed;
@@ -31,7 +30,7 @@ body{
   width: 300px;
 }
 .text-init{
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 200px;
   text-align: right;
   color: white;
